@@ -1,0 +1,51 @@
+/* common css */
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Noto Serif Japanese", serif;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+  display: block;
+}
+
+/* common style */
+.common-wrap-x {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.common-wrap-y {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.flex {
+  display: flex;
+}
+.section-heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0;
+}
+
+/* variables */
+$common-color: #ff5523;
+$common-bg-color: #f8f8f8;
