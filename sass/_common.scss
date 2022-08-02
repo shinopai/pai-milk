@@ -1,3 +1,6 @@
+@import "_mixin";
+@import "_breakpoints";
+
 /* common css */
 * {
   font-size: 62.5%;
@@ -44,6 +47,17 @@ img {
   font-weight: 700;
   color: #000;
   margin-top: 0;
+  @include mq(sm) {
+    margin-bottom: 15px;
+    font-size: min(7.8vw, 3.6rem);
+    text-align: center;
+  }
+}
+.pc-only {
+  display: block;
+  @include mq(sm) {
+    display: none;
+  }
 }
 
 /* variables */

@@ -80,6 +80,24 @@
               </li>
             </ul>
           </div>
+          <div class="header__sp-button"></div>
+          <i class="fas fa-bars header__menu-icon" id="menu_icon"></i>
+          <ul class="header__sp-menu" id="sp_menu">
+            <li class="header__sp-item first">
+              <i
+                class="fas fa-times header__button--close"
+                id="close_button"
+              ></i>
+            </li>
+            <li class="header__sp-item"><a href="#">トップ</a></li>
+            <li class="header__sp-item">
+              <a href="#">ヒストリー&コンセプト</a>
+            </li>
+            <li class="header__sp-item"><a href="#">おいしさの秘密</a></li>
+            <li class="header__sp-item"><a href="#">農協牛乳の酪農家</a></li>
+            <li class="header__sp-item"><a href="#">開発秘話</a></li>
+            <li class="header__sp-item"><a href="#">レシピ</a></li>
+          </ul>
           <div class="header__text-wrap">
             <p class="header__text">2022年6月、</p>
             <p class="header__text">農協牛乳は発売して</p>
@@ -89,11 +107,46 @@
           </div>
         </div>
         <ul class="header__slider">
-          <li><img src="./public/images/img_front01.png" alt="" /></li>
-          <li><img src="./public/images/img_front02.png" alt="" /></li>
-          <li><img src="./public/images/img_front03.png" alt="" /></li>
-          <li><img src="./public/images/img_front04.png" alt="" /></li>
-          <li><img src="./public/images/img_front05.png" alt="" /></li>
+          <li>
+            <picture>
+              <source
+                srcset="./public/images/img_front01.png"
+                media="(min-width: 769px)" />
+              <img src="./public/images/img_front_sp01.png" alt=""
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./public/images/img_front02.png"
+                media="(min-width: 769px)" />
+              <img src="./public/images/img_front_sp02.png" alt=""
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./public/images/img_front03.png"
+                media="(min-width: 769px)" />
+              <img src="./public/images/img_front_sp03.png" alt=""
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./public/images/img_front04.png"
+                media="(min-width: 769px)" />
+              <img src="./public/images/img_front_sp04.png" alt=""
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./public/images/img_front05.png"
+                media="(min-width: 769px)" />
+              <img src="./public/images/img_front_sp05.png" alt=""
+            /></picture>
+          </li>
         </ul>
       </div>
     </header>
@@ -116,9 +169,13 @@
           </a>
           <div class="about__flex-wrap flex">
             <p class="about__flex-text">
-              酪農家が1年365日じっくり育んだ自然の恵み“生乳”。<br />そのおいしさをありのままに伝える<span>農協牛乳</span>は、<br />愛されて半世紀の歴史を刻みました。<br /><span
+              酪農家が1年365日じっくり育んだ自然の恵み“生乳”。<br />そのおいしさをありのままに伝える<span>農協牛乳</span>は、<br
+                class="pc-only"
+              />愛されて半世紀の歴史を刻みました。<br /><span
                 >自然の輝きに、おいしさそえて。</span
-              ><br />農協牛乳は、にっぽんの食卓へ<br />ひたむきに乳牛を育てる「酪農家の想い」と<br />“生乳”本来の豊かな「自然のおいしさ」をお届けします。
+              ><br />農協牛乳は、にっぽんの食卓へ<br />ひたむきに乳牛を育てる「酪農家の想い」と<br
+                class="pc-only"
+              />“生乳”本来の豊かな「自然のおいしさ」をお届けします。
             </p>
             <div class="about__flex-image">
               <img src="./public/images/img_front07.png" alt="" srcset="" />
@@ -319,7 +376,195 @@
           <a href="#" class="recipe__link">レシピ一覧</a>
         </div>
       </section>
+
+      <!-- youtube -->
+      <section class="youtube">
+        <div class="common-wrap-x common-wrap-y">
+          <div class="youtube__flex-wrap flex">
+            <div class="youtube__flex-item--before">
+              <a
+                href="https://www.youtube.com/embed/xbW_Elk2iOI"
+                target="_blank"
+              >
+                <figure class="youtube__image">
+                  <img
+                    src="./public/images/img_front15.png"
+                    alt="プロジェクトN　農協⽜乳50年の記録"
+                    srcset=""
+                  />
+                  <figcaption>
+                    全農製作オリジナル動画<br />『プロジェクトN　農協⽜乳50年の記録』（約15分）
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="youtube__flex-item--after">
+              <a
+                href="https://www.youtube.com/embed/ngZwxarMrW8"
+                target="_blank"
+              >
+                <figure class="youtube__image">
+                  <img
+                    src="./public/images/img_front16.png"
+                    alt="農協牛乳紹介動画　関東地区篇"
+                    srcset=""
+                  />
+                  <figcaption>
+                    農協牛乳紹介動画　関東地区篇(6分）
+                  </figcaption>
+                </figure>
+              </a>
+              <a
+                href="https://www.youtube.com/embed/UP7FRqgV7QA"
+                target="_blank"
+              >
+                <figure class="youtube__image second">
+                  <img
+                    src="./public/images/img_front17.png"
+                    alt="農協牛乳紹介動画　東海地区篇"
+                    srcset=""
+                  />
+                  <figcaption>
+                    農協牛乳紹介動画　東海地区篇(6分）
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info -->
+      <section class="info">
+        <div class="common-wrap-x common-wrap-y">
+          <h2 class="section-heading">商品情報</h2>
+          <div class="info__flex-wrap flex">
+            <div class="info__image">
+              <img
+                src="./public/images/img_front18.png"
+                alt="農協牛乳　内容量"
+                srcset=""
+              />
+            </div>
+            <dl class="info__flex-item">
+              <dt>種類別名称</dt>
+              <dd>牛乳</dd>
+              <dt>商品名</dt>
+              <dd>農協牛乳</dd>
+              <dt>無脂乳固形分</dt>
+              <dd>8.3%以上</dd>
+              <dt>乳脂肪分</dt>
+              <dd>3.5%以上</dd>
+              <dt>原材料名</dt>
+              <dd>生乳100%（国産）</dd>
+              <dt>殺菌</dt>
+              <dd>115°C 20秒間</dd>
+              <dt>内容量</dt>
+              <dd>1000ml/500ml/200ml</dd>
+            </dl>
+            <dl class="info__flex-item">
+              <dt>保存方法</dt>
+              <dd>要冷蔵(10°C以下)</dd>
+              <dt>賞味期限</dt>
+              <dd>製造日を含む13日間</dd>
+              <dt>開封後の取扱</dt>
+              <dd>
+                開封後は賞味期限にかかわらず<br />できるだけ早くお飲みください。
+              </dd>
+              <dt>製造者</dt>
+              <dd>
+                協同乳業株式会社 <br />東京都中央区日本橋 小網町17-2<br />製造所固有の記号は<br />BF：東京工場<br />BA:東海工場
+              </dd>
+            </dl>
+          </div>
+          <p class="info__text first">
+            栄養成分表示（200ml当たり）： 〇エネルギー 137kcal 〇たんぱく質 6.8g
+            〇脂質 7.8g 〇炭水化物 9.9g 〇食塩相当量 0.2g 〇カルシウム 227mg
+          </p>
+          <p class="info__text second">
+            販売エリアについて：
+            関東地区・東海・関西地区のみの販売となっております。
+          </p>
+        </div>
+      </section>
+
+      <!-- anniv -->
+      <section class="anniv">
+        <div class="common-wrap-x common-wrap-y">
+          <a href="https://www.zennoh.or.jp/nokyomilk50th/" target="_blank">
+            <figure class="anniv__banner">
+              <img
+                src="./public/images/bnr_front02.png"
+                alt="農協牛乳　50周年記念サイト"
+                srcset=""
+              />
+            </figure>
+          </a>
+        </div>
+      </section>
+
+      <!-- series -->
+      <section class="series">
+        <div class="common-wrap-x common-wrap-y">
+          <h2 class="section-heading">農協シリーズ</h2>
+          <div class="series__flex-wrap flex">
+            <a href="https://www.meito.co.jp/nokyo-yogurt/" target="_blank">
+              <figure class="series__flex-item">
+                <img
+                  src="./public/images/img_front19.png"
+                  alt="農協ヨーグルトブランドサイト"
+                  srcset=""
+                />
+                <figcaption>農協ヨーグルトブランドサイト</figcaption>
+              </figure>
+            </a>
+            <a href="https://www.meito.co.jp/nokyo-coffee/" target="_blank">
+              <figure class="series__flex-item">
+                <img
+                  src="./public/images/img_front20.png"
+                  alt="農協珈琲ブランドサイト"
+                  srcset=""
+                />
+                <figcaption>農協珈琲ブランドサイト</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- brand -->
+      <section class="brand">
+        <div class="common-wrap-x common-wrap-y">
+          <a href="https://www.meito.co.jp/nokyo-milk-series/" target="_blank">
+            <figure class="brand__banner">
+              <img
+                src="./public/images/bnr_front03.png"
+                alt="農協シリーズ　ブランドサイト"
+                srcset=""
+              />
+            </figure>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="common-wrap-x">
+          <div class="footer__flex-wrap flex">
+            <ul class="footer__menu flex">
+              <li>プライバシーポリシー</li>
+              <li>お問い合わせ</li>
+            </ul>
+            <small class="footer__copy"
+              >Copyright &copy; Pai Milk Industry Co.,Ltd. All rights
+              reserved.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- script -->
     <script src="./public/js/main.js"></script>
