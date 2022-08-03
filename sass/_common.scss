@@ -55,9 +55,12 @@ img {
 }
 .pc-only {
   display: block;
-  @include mq(sm) {
+  @include mq(md) {
     display: none;
   }
+}
+.break {
+  word-break: break-all;
 }
 
 /* variables */

@@ -20,7 +20,7 @@ $(function () {
       },
       500
     );
-    menuIcon.addClass("inactive");
+    // menuIcon.addClass("inactive");
   });
 
   closeButton.click(function () {
@@ -31,6 +31,6 @@ $(function () {
       500
     );
     // spMenu.removeClass("active");
-    menuIcon.removeClass("inactive");
+    // menuIcon.removeClass("inactive");
   });
 });

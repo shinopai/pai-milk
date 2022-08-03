@@ -10,6 +10,12 @@
     z-index: 10;
     align-items: center;
     top: -25px;
+    @include mq(md) {
+      left: 0;
+    }
+    @include mq(sm) {
+      left: initial;
+    }
   }
   &__logo {
     width: 190px;
@@ -22,6 +28,10 @@
     img {
       width: 70%;
       margin: 0 auto;
+    }
+    @include mq(md) {
+      width: 140px;
+      height: 140px;
     }
     @include mq(sm) {
       width: 110px;
@@ -38,6 +48,9 @@
     align-items: center;
     border-radius: 0 100vh 100vh 0;
     margin-left: -10px;
+    @include mq(md) {
+      gap: 20px;
+    }
     @include mq(sm) {
       display: none;
     }
@@ -46,6 +59,12 @@
     a {
       font-size: 1.4rem;
       font-weight: 700;
+      @include mq(md) {
+        font-size: min(1.33vw, 1.4rem);
+      }
+      @include mq(sm) {
+        font-size: initial;
+      }
     }
   }
   &__sp-button {
@@ -57,18 +76,15 @@
     }
   }
   &__menu-icon {
-    display: none;
+    display: none !important;
     font-size: 3rem;
     color: $common-color;
     position: fixed;
     right: 10px;
     top: 10px;
     @include mq(sm) {
-      display: block;
+      display: block !important;
       z-index: 10;
-    }
-    &.inactive {
-      display: none;
     }
   }
   &__sp-menu {
@@ -144,8 +160,12 @@
   &__flex-wrap {
     margin: 5% auto 0;
     width: 80%;
+    @include mq(md) {
+      gap: 15px;
+    }
     @include mq(sm) {
       flex-direction: column-reverse;
+      gap: initial;
     }
   }
   &__flex-text {
@@ -171,9 +191,19 @@
     align-items: flex-end;
     img {
       width: 80%;
+      @include mq(md) {
+        min-width: 200px;
+      }
+      @include mq(sm) {
+        min-width: initial;
+      }
+      @include mq(md) {
+        min-width: 200px;
+      }
     }
     @include mq(sm) {
       width: 80%;
+      max-width: 350px;
       margin: 0 auto;
     }
   }
@@ -211,8 +241,12 @@
     width: 10%;
     padding: 5px 10px;
     text-align: center;
+    @include mq(md) {
+      width: 15%;
+    }
     @include mq(sm) {
       width: 50%;
+      max-width: 150px;
       margin: 10px auto 0 0;
     }
   }
@@ -251,8 +285,18 @@
 .campaign {
   &__banner {
     width: 30%;
+    img {
+      @include mq(md) {
+        min-width: 320px;
+      }
+      @include mq(sm) {
+        min-width: initial;
+      }
+    }
     @include mq(sm) {
       width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
     }
   }
 }
@@ -295,6 +339,10 @@
       background-color: #f8f8f8;
       right: 0;
       left: initial;
+    }
+    @include mq(md) {
+      width: initial;
+      padding-right: 10%;
     }
     @include mq(sm) {
       position: initial;
@@ -352,6 +400,15 @@
     width: 60%;
     @include mq(sm) {
       width: 90%;
+      max-width: 600px;
+    }
+    img {
+      @include mq(md) {
+        min-width: 700px;
+      }
+      @include mq(sm) {
+        min-width: initial;
+      }
     }
   }
 }
@@ -378,6 +435,9 @@
     gap: 40px;
     @include mq(sm) {
       flex-direction: column;
+      max-width: 80%;
+      margin: 0 auto;
+      gap: 70px;
     }
   }
   &__flex-item {
@@ -401,6 +461,9 @@
       content: "\f054";
       color: $common-color;
       margin-left: 10px;
+    }
+    @include mq(md) {
+      font-size: 1.25vw;
     }
     @include mq(sm) {
       font-size: min(4.4vw, 2rem);
@@ -439,12 +502,22 @@
 .youtube {
   &__flex-wrap {
     gap: 40px;
+    @include mq(sm) {
+      flex-direction: column;
+    }
   }
   &__flex-item--before {
     width: 70%;
+    @include mq(sm) {
+      width: 100%;
+    }
   }
   &__flex-item--after {
     width: 33%;
+    @include mq(sm) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
   &__image {
     &:hover {
@@ -457,6 +530,9 @@
       font-size: 2rem;
       font-weight: 500;
       margin-top: 10px;
+      @include mq(sm) {
+        font-size: min(4.4vw, 2rem);
+      }
     }
   }
 }
@@ -470,11 +546,28 @@
   &__flex-wrap {
     margin-top: 5%;
     justify-content: space-between;
+    @include mq(sm) {
+      flex-direction: column;
+    }
   }
   &__image {
     width: 30%;
     img {
       width: 85%;
+      @include mq(md) {
+        min-width: 200px;
+      }
+      @include mq(sm) {
+        min-width: initial;
+      }
+    }
+    @include mq(sm) {
+      width: 60%;
+      max-width: 350px;
+      margin: 0 auto;
+      img {
+        margin: 0 auto;
+      }
     }
   }
   &__flex-item {
@@ -492,6 +585,13 @@
     dd {
       font-size: 1.6rem;
       font-weight: 500;
+      @include mq(sm) {
+        font-size: min(5vw, 2rem);
+      }
+    }
+    @include mq(sm) {
+      width: 100%;
+      margin-top: 30px;
     }
   }
   &__text {
@@ -504,6 +604,9 @@
     &.second {
       margin: 0;
     }
+    @include mq(sm) {
+      font-size: min(5vw, 2rem);
+    }
   }
 }
 
@@ -514,9 +617,16 @@
       width: 80%;
       max-width: 900px;
       margin: 0 auto;
+      @include mq(sm) {
+        width: 100%;
+      }
     }
     &:hover {
       opacity: 0.7;
+    }
+    @include mq(sm) {
+      max-width: 450px;
+      margin: 0 auto;
     }
   }
 }
@@ -532,6 +642,11 @@
     margin: 5% auto 0;
     width: 70%;
     justify-content: space-between;
+    @include mq(sm) {
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
   }
   &__flex-item {
     width: 80%;
@@ -556,6 +671,10 @@
       width: 60%;
       max-width: 700px;
       margin: 0 auto;
+      @include mq(sm) {
+        width: 100%;
+        max-width: 450px;
+      }
     }
     &:hover {
       opacity: 0.7;
@@ -570,6 +689,11 @@
   padding-bottom: 15px;
   &__flex-wrap {
     justify-content: space-between;
+    @include mq(sm) {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
   }
   &__menu {
     li {
